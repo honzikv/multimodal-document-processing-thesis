@@ -1,0 +1,6 @@
+optimizer: SGD
+use_pretrained: True
+model_size: l
+batch_size: 4
+n_epochs: 100
+image_size: 640

@@ -1,0 +1,10 @@
+use_bbox_features: [True, False]
+learning_rate: 0.00001
+epochs: 20
+optimizer: adamw
+warmup_steps: 1000
+text_features_size: [16, 32]
+image_features_size: [16, 32]
+vit_model_name: microsoft/swin-base-patch4-window7-224-in22k
+image_output_activation_name: ['gelu', 'silu']
+text_output_activation_name: ['gelu', 'silu']

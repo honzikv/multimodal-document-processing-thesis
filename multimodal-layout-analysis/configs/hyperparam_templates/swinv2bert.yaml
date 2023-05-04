@@ -1,0 +1,8 @@
+use_bbox_features: [True, False]
+learning_rate: [0.00001, 0.00005]
+epochs: 20
+optimizer: adamw
+warmup_steps: [null, 1000, 1500]
+text_features_size: [64, 128]
+image_features_size: [64, 128]
+vit_model_name: microsoft/swin-base-patch4-window7-224-in22k

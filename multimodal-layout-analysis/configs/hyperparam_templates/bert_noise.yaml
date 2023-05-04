@@ -1,0 +1,18 @@
+epochs: 20
+image_features_size: 128
+learning_rate: 1.0e-05
+optimizer: adamw
+text_features_size: 128
+use_bbox_features: false
+warmup_steps: 1500
+dataset_key:
+  - CLASSIFIER_DATA_DIR
+  - BERT_NOISE_DATA_DIR_5
+  - BERT_NOISE_DATA_DIR_10
+  - BERT_NOISE_DATA_DIR_15
+  - BERT_NOISE_DATA_DIR_20
+  - BERT_NOISE_DATA_DIR_25
+  - BERT_NOISE_DATA_DIR_30
+  - BERT_NOISE_DATA_DIR_50
+  - BERT_NOISE_DATA_DIR_75
+  - BERT_NOISE_DATA_DIR_100

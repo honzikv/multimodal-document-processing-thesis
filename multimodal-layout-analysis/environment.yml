@@ -1,0 +1,5 @@
+# Configuration for the training / evaluation environment
+CLASSIFIER_DATA_DIR: '/mnt/c/ml-data/heimatkunde-v4-listings/classifier/'
+COCO_DATA_DIR: '/mnt/c/ml-data/heimatkunde-v4-listings/'
+YOLO_DATA_DIR: '/mnt/c/ml-data/heimatkunde-v4-listings/yolo/'
+SEED: 0
