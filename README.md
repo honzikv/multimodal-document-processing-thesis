@@ -29,7 +29,7 @@ The following is required to run the experiments:
      - `conda install pytorch torchvision torchaudio pytorch-cuda=11.1 -c pytorch -c nvidia`
    - Build and install Detectron2 via GitHub
      - `python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'`
-   - Install our modified version of LayoutLMv3 which does not have conflicts with transformers - this is located in
+   - Install our modified version of LayoutLMv3 which does not have conflicts with the `transformers` library - this is located in
      the `layoutlmv3` directory. Navigate to the directory and install it via: `pip install -e .`
    - Install rest of the requirements: `pip install -r requirements.txt`
 
