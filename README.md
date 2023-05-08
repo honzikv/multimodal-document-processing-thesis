@@ -19,7 +19,7 @@ The following is required to run the experiments:
 1. Install Tesseract (https://tesseract-ocr.github.io/tessdoc/Installation.html) either via package manager (e.g. `sudo apt install tesseract-ocr
 `) or build it from source.
     - Tesseract needs to be registered in the PATH for the scripts to be runnable
-    - You need to copy the pre-trained fraktur model `fraktur_custom.tessdata` from the `OCR` directory to the tessdata directory. This directory should be in the install path
+    - You need to copy the pre-trained fraktur model `fraktur_custom.tessdata` from the `ocr` directory to the tessdata directory. This directory should be in the install path
     of Tesseract.
 2. Create new conda environment and install all dependencies:
    - `conda create --name multimodal python=3.9`
