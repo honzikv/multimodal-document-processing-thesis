@@ -9,7 +9,7 @@ from typing import Optional
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
 
-DEFAULT_ENVIRONMENT_CONFIG_PATH = Path('environment.yml')
+DEFAULT_ENVIRONMENT_CONFIG_PATH = Path('environment.yaml')
 
 
 def load_yml(hyperparams_path: Path):
