@@ -2,6 +2,9 @@
 This repository contains all relevant code to reproduce 
 experiments performed in my masters thesis.
 
+## Heimatkunde dataset
+The Heimatkunde dataset is hosted on a different GitHub repository, which can be accessed here: https://github.com/honzikv/heimatkunde-dataset
+
 ## Environment
 
 The experiments are reproducible on Linux and macOS. Windows is also compatible via
