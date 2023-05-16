@@ -5,6 +5,10 @@ experiments performed in my masters thesis.
 ## Heimatkunde dataset
 The Heimatkunde dataset is hosted on a different GitHub repository, which can be accessed here: https://github.com/honzikv/heimatkunde-dataset
 
+To download the dataset, simply clone the repository to the desired folder, e.g.:
+
+`git clone https://github.com/honzikv/heimatkunde-dataset`
+
 ## Environment
 
 The experiments are reproducible on Linux and macOS. Windows is also compatible via
@@ -42,14 +46,6 @@ To create the DLA dataset from scratch two scripts are needed. The first one cre
 the dataset ZIP file, while the other converts the COCO annotations to ones digestible by classifier.
 
 ### Creating COCO and YOLO annotations
-
---zip-path
-/mnt/c/ml-data/heimatkunde-v4-listings.zip
---output-path
-/mnt/c/ml-data/heimatkunde-v4-listings
---create-yolo
---max-image-width
-1280
 
 To create the COCO and YOLO annotations from the dataset ZIP file, 
 navigate to the `preprocessing` directory and run the `cvat_preprocessing.py` script
