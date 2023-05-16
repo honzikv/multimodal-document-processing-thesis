@@ -48,7 +48,7 @@ In addition to the training and eval scripts there are following directories:
 
 - `config` - configuration files for running the models / hyperparameter templates
 - `dataset` - code relevant to loading and preprocessing the dataset
-  - `huggingface/heimatkunde_classification_dataset.py` - script for datasets loading
+  - `huggingface/heimatkunde_classification_dataset.py` - script to load the data via `datasets`
 - `ditod` - code for LayoutLMv3 inference
 - `eval` - code for evaluation
 - `models` - implementation of the models

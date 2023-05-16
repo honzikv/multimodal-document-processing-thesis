@@ -2,12 +2,9 @@
 This repository contains all relevant code to reproduce 
 experiments performed in my masters thesis.
 
-## Heimatkunde dataset
+## The Heimatkunde dataset
 The Heimatkunde dataset is hosted on a different GitHub repository, which can be accessed here: https://github.com/honzikv/heimatkunde-dataset
 
-To download the dataset, simply clone the repository to the desired folder, e.g.:
-
-`git clone https://github.com/honzikv/heimatkunde-dataset`
 
 ## Environment
 
@@ -17,18 +14,19 @@ using a Linux distribution, however the steps are similar for macOS and WSL.
 
 The following is required to run the experiments:
 
-- Anaconda, miniconda, or other tool that can easily setup new Python 3.9 environment
+- Anaconda, miniconda, or similar tool that can easily setup new Python 3.9 environment
 - 8+ GB of RAM and ideally a discrete GPU with 8+ GB of VRAM for faster training
 - Tesseract OCR installed and registered in the PATH
 
 ### Installation
 
-1. Install Tesseract (https://tesseract-ocr.github.io/tessdoc/Installation.html) either via package manager (e.g. `sudo apt install tesseract-ocr
+1. Download the dataset, e.g. via `git clone https://github.com/honzikv/heimatkunde-dataset`
+2. Install Tesseract (https://tesseract-ocr.github.io/tessdoc/Installation.html) either via your package manager (e.g. `sudo apt install tesseract-ocr
 `) or build it from source.
     - Tesseract needs to be registered in the PATH for the scripts to be runnable
     - You need to copy the pre-trained fraktur model `fraktur_custom.tessdata` from the `ocr` directory to the tessdata directory. This directory should be in the install path
     of Tesseract.
-2. Create new conda environment and install all dependencies:
+3. Create new conda environment and install all dependencies:
    - `conda create --name multimodal python=3.9`
    - `conda activate multimodal`
    - Install PyTorch - navigate to https://pytorch.org/get-started/locally/ for details
@@ -40,12 +38,12 @@ The following is required to run the experiments:
      the `layoutlmv3` directory. Navigate to the directory and install it via: `pip install -e .`
    - Install rest of the requirements: `pip install -r requirements.txt`
 
-## Creating document layout analysis dataset from scratch
+## Creating document layout analysis dataset from scratch (not necessary)
 
 To create the DLA dataset from scratch two scripts are needed. The first one creates COCO and YOLO annotations from
 the dataset ZIP file, while the other converts the COCO annotations to ones digestible by classifier.
 
-### Creating COCO and YOLO annotations
+### Creating COCO and YOLO annotations 
 
 To create the COCO and YOLO annotations from the dataset ZIP file, 
 navigate to the `preprocessing` directory and run the `cvat_preprocessing.py` script
@@ -115,15 +113,15 @@ information about the classes in the dataset and should be identical for both sp
 
 Each experiment is located in its own directory with a dedicated README file.
 The README file contains instructions on how to run the experiment and the structure
-of the directory. Note that scripts for any experiment must be run from its directory, otherwise
+of the directory. Note that **scripts for any experiment must be run from its corresponding directory**, otherwise
 the paths will not be resolved correctly.
 
-⚠️⚠️⚠️
+### Wandb Logging ⚠️⚠️⚠️
 
 Note that all our experiments use Wandb logging which needs to be turned off if you do not have a Wandb account. To do
-so, simply run each training script with the `--no-wandb` flag.
+so, simply run the corresponding training script with the `--no-wandb` flag.
 
-⚠️⚠️⚠️
+### Structure
 
 The experiments are located in following directories:
 
