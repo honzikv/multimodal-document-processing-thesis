@@ -30,10 +30,11 @@ The following is required to run the experiments:
    - `conda create --name multimodal python=3.9`
    - `conda activate multimodal`
    - Install PyTorch - navigate to https://pytorch.org/get-started/locally/ for details
-     - All experiments were run with CUDA 11.7
-     - `conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia`
+     - All experiments were run with CUDA 11.6
+     - `conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia`
    - Build and install Detectron2 via GitHub
      - `python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'`
+     - Refer to the official troubleshooting guide if you encounter any compilation issues: https://detectron2.readthedocs.io/en/latest/tutorials/install.html#common-installation-issues
    - Install our modified version of LayoutLMv3 which does not have conflicts with the `transformers` library - this is located in
      the `layoutlmv3` directory. Navigate to the directory and install it via: `pip install -e .`
    - Install rest of the requirements: `pip install -r requirements.txt`

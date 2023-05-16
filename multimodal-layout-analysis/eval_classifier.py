@@ -12,7 +12,7 @@ from models.layoutlmv3.layoutlmv3 import LayoutLMv3Lightning
 from models.layoutlmv3.layoutlmv3_preprocessing import prepare_examples as prepare_layoutlmv3_examples
 from models.fusion.vitbert_preprocessing import prepare_examples as prepare_vibert_examples
 
-DEFAULT_DATASET_PATH = Path('/mnt/c/ml-data/heimatkunde-v4/classifier/')
+DEFAULT_DATASET_PATH = Path('/mnt/c/ml-data/heimatkunde/classifier/')
 VIT_MODEL = 'google/vit-base-patch16-224-in21k'
 BERT_MODEL = 'bert-base-german-cased'
 

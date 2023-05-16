@@ -78,5 +78,5 @@ if __name__ == '__main__':
     model_path = '/mnt/e/ml-models/yolo/a/weights/best.pt'
 
     wrapper = YoloSegmentationModelWrapper(model_path)
-    image_path = '/mnt/c/ml-data/heimatkunde-v4-listings/test-images/heimatkunde-a15539_0560.jpg'
+    image_path = '/mnt/c/ml-data/heimatkunde/test-images/heimatkunde-a15539_0560.jpg'
     print(wrapper({'file_name': image_path}))
