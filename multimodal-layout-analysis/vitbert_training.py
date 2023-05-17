@@ -23,6 +23,8 @@ DEFAULT_HYPERPARAMS = {
     'dataset_key': 'CLASSIFIER_DATA_DIR',
     'image_output_activation_name': 'relu',
     'text_output_activation_name': 'relu',
+    'text_features_size': 64,
+    'image_features_size': 64,
     'text_features_dropout': .3,
     'image_features_dropout': .3,
 }

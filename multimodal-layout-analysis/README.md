@@ -14,16 +14,16 @@ CLASSIFIER_DATA_DIR: '/ml-data/heimatkunde-dataset/classifier/'
 
 There are several scripts for training:
 
-- `bert_training.py` - training script for BERT-based classifier
-- `vit_training.py` - training script for ViT and SwinV2-based classifiers
-- `layoutlmv3_training.py` - training script for LayoutLMv3 classifier
-- `vitbert_training.py` - training script for BERT + ViT/SwinV2-based classifier
+- `bert_training.py` - training script for the BERT-based classifier
+- `vit_training.py` - training script for the ViT and SwinV2-based classifiers
+- `layoutlmv3_training.py` - training script for the LayoutLMv3 classifier
+- `vitbert_training.py` - training script for the BERT + ViT/SwinV2-based classifier
 
 Each script uses the same set of arguments:
 
-- `--environment-config-path` - path to the environment.yaml file which contains environment settings
+- `--environment-config-path` - path to the environment.yaml file which contains the environment settings
 - `--hyperparams-path` - path to the model's hyperparameters. Hyperparams are stored in the `hyperparams` directory
-- `--force-seed` - forces seed, overriding one in the environment.yaml file
+- `--force-seed` - forces seed, overriding the one set in the environment.yaml file
 - `--no-wandb` - disables wandb logging
 
 The training is performed by simply running the script, for example:
@@ -40,11 +40,11 @@ Evaluation is performed by running the `eval_multimodal.py` script.
 The script uses the following arguments:
 
 - `seg-model-name` - name of the segmentation model, must be one of `layoutlmv3`, `mask_rcnn`, or `yolo`
-- `seg-model-path` - path to the segmentation model's configuration (LayoutLMv3 / mask_rcnn) or weights (YOLO)
+- `seg-model-path` - path to the segmentation model's configuration (LayoutLMv3 / Mask R-CNN) or weights (YOLO)
 - `class-model-name` - name of the classification model, must be one of `layoutlmv3` or `vitbert`
 - `class-model-weights` - path to the `.ckpt` file with the classification model's weights
 - `dataset-path` - path to the root of the dataset to evaluate on, e.g. `/ml-data/mydataset`
-- `no-classifier` - if specified no classifier is used (optional)
+- `no-classifier` - if specified no classifier is used (optional) and the standard COCO-only evaluation is performed
 
 Note that the evaluation is relatively long due to OCR and can take several tens of minutes.
 
