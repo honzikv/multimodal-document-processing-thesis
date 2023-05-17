@@ -3,6 +3,14 @@
 This directory contains code to train the LayoutLMv3 instance segmentation model on
 our dataset.
 
+## Downloading the model
+
+Before training, it is necessary to download the model.
+
+The pre-training-only variant can be downloaded here: https://github.com/microsoft/unilm/tree/master/layoutlmv3#pre-trained-models
+
+The PubLayNet variant can be downloaded here: https://huggingface.co/HYPJUDY/layoutlmv3-base-finetuned-publaynet
+
 ## Training
 
 Before training the model it is necessary to configure the model `.yaml` file. To do so,
