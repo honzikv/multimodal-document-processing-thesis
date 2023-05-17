@@ -5,6 +5,13 @@ as well as evaluation of the multi-modal layout analysis.
 
 ## Classifier training
 
+Before you start the training, it is necessary to configure `environment.yaml` file to
+point to the directory of your classifier annotations. E.g.:
+
+```yaml
+CLASSIFIER_DATA_DIR: '/ml-data/heimatkunde-dataset/classifier/'
+```
+
 There are several scripts for training:
 
 - `bert_training.py` - training script for BERT-based classifier

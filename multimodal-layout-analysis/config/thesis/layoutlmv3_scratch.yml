@@ -4,8 +4,7 @@ MODEL:
   META_ARCHITECTURE: "VLGeneralizedRCNN"
   PIXEL_MEAN: [ 127.5, 127.5, 127.5 ]
   PIXEL_STD: [ 127.5, 127.5, 127.5 ]
-#  WEIGHTS: "/mnt/c/dev/results/layoutlmv3-results/publaynet-finetuned-30k/model_final.pth"
-#  WEIGHTS: "/mnt/c/ml-data/models/layoutlmv3-heimatkunde-local/model_final.pth"
+  # Set weights and config path
   WEIGHTS: "/mnt/e/ml-models/layoutlmv3/scratch_all_classes/model_best.pth"
   CONFIG_PATH: "/mnt/e/ml-models/layoutlmv3/scratch_all_classes/config.json"
   BACKBONE:
