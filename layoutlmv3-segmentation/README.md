@@ -13,7 +13,7 @@ The PubLayNet variant can be downloaded here: https://huggingface.co/HYPJUDY/lay
 
 ## Training
 
-Before training the model it is necessary to configure the model `.yaml` file. To do so,
+It is necessary to configure the model `model_config.yaml` file. To do so,
 modify following keys to point to the correct locations:
 
 - `MODEL.WEIGHTS` - path to the pre-trained LayoutLMv3 model with either .pth or .bin extension
